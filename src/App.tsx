@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
 import Router from "@/Components/Router";
+import Layout from "@/Components/Layout";
+import Header from "@/Components/Header";
 
 function App() {
   return (
     <>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Router />
+      <Header />
+      <Layout>
+        <Router />
+      </Layout>
     </>
   );
 }
