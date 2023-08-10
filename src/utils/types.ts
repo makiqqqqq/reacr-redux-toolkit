@@ -10,3 +10,5 @@ export type RouteLink = {
   label: string;
   className: string;
 };
+
+export type GitHubState = [favourites: string[]];

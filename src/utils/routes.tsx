@@ -3,7 +3,7 @@ import { RouteType, RouteLink } from "@/utils/types.ts";
 
 export enum ROUTES {
   MAIN = "/",
-  ABOUT = "/favourites",
+  FAVOURITES = "/favourites",
 }
 
 const Home = lazy(() => import("@/pages/Home"));
@@ -15,12 +15,12 @@ export const routes: RouteType[] = [
     element: <Home />,
   },
   {
-    path: ROUTES.ABOUT,
+    path: ROUTES.FAVOURITES,
     element: <Favourites />,
   },
 ];
 
 export const ROUTES_LINKS: RouteLink[] = [
   { to: "/", label: "Home", className: "text-white hover:underline" },
-  { to: "about", label: "Favourites", className: "text-white hover:underline" },
+  { to: "favourites", label: "Favourites", className: "text-white hover:underline" },
 ];
